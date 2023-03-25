@@ -16,7 +16,10 @@ public class Movement2D : MonoBehaviour
     private Vector3 velocity;                       // 속력 
 
     [SerializeField]
-    private float jumpGravity = -30.0f;             // 점프 시 일반적으로 적용되는 중력 
+    private float lowGravity = -15.0f;
+
+    [SerializeField]
+    private float highGravity = -40.0f;
     private float gravity = -30.0f;                 // 중력
 
     private int horizontalRayCount = 4;             // 오브젝트의 좌,우 외곽 광선 개수
@@ -70,9 +73,13 @@ public class Movement2D : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (IsJump && velocity.y > 0)
+        if (IsLongJump && velocity.y > 0)
         {
-            gravity = jumpGravity;
+            gravity = lowGravity;
+        }
+        else
+        {
+            gravity = highGravity;
         }
     }
 
@@ -92,7 +99,7 @@ public class Movement2D : MonoBehaviour
         return false;
     }
 
-    public bool IsJump
+    public bool IsLongJump
     {
         set; get;
     }

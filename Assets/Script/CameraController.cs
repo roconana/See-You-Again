@@ -14,11 +14,19 @@ public class CameraController : MonoBehaviour
 
     private void LateUpdate()
     {
-        // Smoothly move the camera towards the target position
+        // Get the target position and clamp the Y value to the current position of the camera
         Vector3 targetPosition = target.position;
-        targetPosition.z = transform.position.z;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        targetPosition.y = transform.position.y;
+
+        // Calculate the X position based on the target's position
+        float targetX = targetPosition.x;
+        float cameraX = transform.position.x;
+        float newX = Mathf.Lerp(cameraX, targetX, smoothTime);
+
+        // Set the new position of the camera
+        transform.position = new Vector3(newX, transform.position.y, transform.position.z);
     }
+
 
     public void SetTargetPosition(Vector3 position)
     {
