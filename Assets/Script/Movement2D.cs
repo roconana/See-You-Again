@@ -104,6 +104,16 @@ public class Movement2D : MonoBehaviour
         set; get;
     }
 
+    public CollisionChecker IsCollision
+    {
+        get { return collisionChecker; }
+    }
+
+    public Vector2 Velocity
+    {
+        get { return velocity; }
+    }
+
     private void RaycastsHorizontal(ref Vector3 velocity)
     {
         float direction = Mathf.Sign(velocity.x);
