@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         UpdateMove();
         UpdateJump();
+
+        UpdateTalk();
     }
 
     private void UpdateMove()
@@ -62,6 +64,16 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("isJump", true);
             }
+
+            animator.SetFloat("jump", Mathf.Sign(movement2D.Velocity.y));
+        }
+    }
+
+    private void UpdateTalk()
+    {
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            currentNPC?.StartDialog();
         }
     }
 
@@ -74,6 +86,7 @@ public class PlayerController : MonoBehaviour
             if (isJump)
             {
                 //점프 성공 시 할 행동 
+                animator.SetBool("isJump", true);
             }
         }
 
@@ -86,5 +99,13 @@ public class PlayerController : MonoBehaviour
         {
             movement2D.IsLongJump = false;
         }
+    }
+
+    private NPC currentNPC = null;
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!collision.TryGetComponent<NPC>(out NPC npc)) return;
+
+        currentNPC = npc;
     }
 }
