@@ -11,17 +11,23 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    public bool isDontMove;
+
     private void Awake()
     {
         movement2D = GetComponent<Movement2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        isDontMove = true;
     }
 
     private void Update()
     {
-        UpdateMove();
-        UpdateJump();
+        if(isDontMove)
+        {
+            UpdateMove();
+            UpdateJump();
+        }
 
         UpdateTalk();
     }

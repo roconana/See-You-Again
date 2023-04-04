@@ -15,6 +15,8 @@ public class Dialog : MonoBehaviour
 
     public UnityEvent onEndEveryDialog;
 
+    public GameObject player;
+
     public void StartDialog()
     {
         if (isTalking) return;
@@ -62,6 +64,16 @@ public class Dialog : MonoBehaviour
         }
 
         print("UP");
+    }
+
+    public void MoveOn()
+    {
+        player.GetComponent<PlayerController>().isDontMove = true;
+    }
+
+    public void MoveOff()
+    {
+        player.GetComponent<PlayerController>().isDontMove = false;
     }
 
     [System.Serializable]
