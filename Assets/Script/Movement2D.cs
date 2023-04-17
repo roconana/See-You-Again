@@ -33,6 +33,7 @@ public class Movement2D : MonoBehaviour
 
     private readonly float skinWidth = 0.015f;      // 오브젝트 표면에서 광선을 쏘지 않기 위해 안쪽으로 파고드는 소량의 범위 설정 
 
+    float distance;
 
     private void Awake()
     {
@@ -143,7 +144,9 @@ public class Movement2D : MonoBehaviour
     private void RaycastsVertical(ref Vector3 velocity)
     {
         float direction = Mathf.Sign(velocity.y);
-        float distance = Mathf.Abs(velocity.y) + skinWidth;
+        
+            distance = Mathf.Abs(velocity.y) + skinWidth;
+       
         Vector2 rayPosition = Vector2.zero;
 
         // x축 방향으로 4개의 광선 발사

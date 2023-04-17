@@ -32,6 +32,11 @@ public class PlayerController : MonoBehaviour
         UpdateTalk();
     }
 
+    public void MoveCtrl()
+    {
+        isDontMove = !isDontMove;
+    }
+
     private void UpdateMove()
     {
         float x = Input.GetAxisRaw("Horizontal");
