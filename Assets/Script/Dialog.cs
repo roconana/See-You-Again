@@ -14,8 +14,11 @@ public class Dialog : MonoBehaviour
     public List<DialogInfo> dialogInfos = new List<DialogInfo>();
 
     public UnityEvent onEndEveryDialog;
+    public UnityEvent onEndDialogsAndSwitchScene;
 
     public GameObject player;
+    public string nextScene;
+
 
     // The delay between each character in the typing effect.
     public float typingDelay = 0.05f;
@@ -58,6 +61,7 @@ public class Dialog : MonoBehaviour
         }
 
         onEndEveryDialog.Invoke();
+        onEndDialogsAndSwitchScene.Invoke();
     }
 
     private IEnumerator StayByKeyDown()
@@ -101,4 +105,5 @@ public class Dialog : MonoBehaviour
         public UnityEvent onStartTalk;
         public UnityEvent onEndTalk;
     }
+
 }
