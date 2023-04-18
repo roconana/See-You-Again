@@ -175,8 +175,8 @@ public class Movement2D : MonoBehaviour
         bounds.Expand(skinWidth * -2);
 
         colliderCorner.bottomLeft = new Vector2(bounds.min.x, bounds.min.y);
-        colliderCorner.bottomRight = new Vector2(bounds.min.x, bounds.min.y);
-        colliderCorner.topLeft = new Vector2(bounds.min.x, bounds.min.y);
+        colliderCorner.bottomRight = new Vector2(bounds.max.x, bounds.min.y);
+        colliderCorner.topLeft = new Vector2(bounds.min.x, bounds.max.y);
     }
 
      private void CalculateRaySpacing()

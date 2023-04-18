@@ -17,6 +17,9 @@ public class Dialog : MonoBehaviour
 
     public GameObject player;
 
+    // The delay between each character in the typing effect.
+    public float typingDelay = 0.05f;
+
     public void StartDialog()
     {
         if (isTalking) return;
@@ -34,31 +37,45 @@ public class Dialog : MonoBehaviour
             info.onStartTalk.Invoke();
 
             textName.text = info.name;
-            textDialog.text = info.talk;
+
+            // Clear the text dialog first.
+            textDialog.text = "";
+
+            // Iterate through each character in the dialogue text and add it to the TextMeshProUGUI component one by one.
+            for (int i = 0; i < info.talk.Length; i++)
+            {
+                // Add the current character to the TextMeshProUGUI component.
+                textDialog.text += info.talk[i];
+
+                // Wait for a short delay before adding the next character to create the typing effect.
+                yield return new WaitForSeconds(typingDelay);
+            }
 
             info.onEndTalk.Invoke();
 
-            yield return  StartCoroutine(StayByKeyDown());
-            yield return  StartCoroutine(StayByKeyUp());
+            yield return StartCoroutine(StayByKeyDown());
+            yield return StartCoroutine(StayByKeyUp());
         }
 
         onEndEveryDialog.Invoke();
     }
 
-    private IEnumerator StayByKeyDown() { 
-        while(true)
+    private IEnumerator StayByKeyDown()
+    {
+        while (true)
         {
-            if(Input.GetKeyDown(KeyCode.Z)) break; 
+            if (Input.GetKeyDown(KeyCode.Z)) break;
 
             yield return null;
         }
         print("DOWN");
     }
-    
-    private IEnumerator StayByKeyUp() { 
-        while(true)
+
+    private IEnumerator StayByKeyUp()
+    {
+        while (true)
         {
-            if(Input.GetKeyUp(KeyCode.Z)) break; 
+            if (Input.GetKeyUp(KeyCode.Z)) break;
 
             yield return null;
         }
@@ -82,6 +99,6 @@ public class Dialog : MonoBehaviour
         public string name;
         public string talk;
         public UnityEvent onStartTalk;
-        public UnityEvent onEndTalk; 
+        public UnityEvent onEndTalk;
     }
 }

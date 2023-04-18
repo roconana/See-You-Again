@@ -1,66 +1,51 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MovingClouds : MonoBehaviour
 {
-    public float[] speeds;
-    public float resetTime = 10f;
+    // Public variables to set in the inspector
+    public float leftRangeMin = 1f;
+    public float leftRangeMax = 2f;
+    public float teleportCoord = -10f;
 
-    private float[] initialPositions;
-    private SpriteRenderer[] sprites;
+    // Private variables
+    private Vector3[] cloudPositions; // Array to store initial positions of clouds
+    private float[] cloudSpeeds; // Array to store random speeds for each cloud
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        sprites = GetComponentsInChildren<SpriteRenderer>();
-        initialPositions = new float[sprites.Length];
-
-        // Store initial positions of all cloud sprites
-        for (int i = 0; i < sprites.Length; i++)
+        // Get the initial positions of all clouds
+        cloudPositions = new Vector3[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
         {
-            initialPositions[i] = sprites[i].transform.position.x;
+            cloudPositions[i] = transform.GetChild(i).transform.position;
+        }
+
+        // Generate random speeds for each cloud
+        cloudSpeeds = new float[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            cloudSpeeds[i] = Random.Range(leftRangeMin, leftRangeMax);
         }
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        // Move cloud sprites to the left at different speeds
-        for (int i = 0; i < sprites.Length; i++)
+        // Move each cloud to the left at its own speed
+        for (int i = 0; i < transform.childCount; i++)
         {
-            sprites[i].transform.Translate(Vector2.left * speeds[i] * Time.deltaTime);
+            Transform cloud = transform.GetChild(i).transform;
+            Vector3 newPos = cloud.position - Vector3.right * cloudSpeeds[i] * Time.deltaTime;
+            cloud.position = newPos;
 
-            // If a sprite goes off screen, reset its position
-            if (sprites[i].transform.position.x < -20f)
+            // Teleport the cloud back to its starting position if it reaches the teleport coordinate
+            if (cloud.position.x <= teleportCoord)
             {
-                sprites[i].transform.position = new Vector2(initialPositions[i] + 20f, sprites[i].transform.position.y);
+                cloud.position = cloudPositions[i];
             }
         }
-    }
-
-    private void OnDisable()
-    {
-        // Reset initial positions of all cloud sprites when script is disabled
-        for (int i = 0; i < sprites.Length; i++)
-        {
-            sprites[i].transform.position = new Vector2(initialPositions[i], sprites[i].transform.position.y);
-        }
-    }
-
-    private void OnEnable()
-    {
-        // Reset initial positions of all cloud sprites when script is enabled
-        for (int i = 0; i < sprites.Length; i++)
-        {
-            initialPositions[i] = sprites[i].transform.position.x;
-        }
-    }
-
-    private void LateUpdate()
-    {
-        // Destroy cloud sprites after resetTime seconds
-        Invoke("DestroySprites", resetTime);
-    }
-
-    private void DestroySprites()
-    {
-        gameObject.SetActive(false);
     }
 }
