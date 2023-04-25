@@ -7,11 +7,13 @@ public class TilemapController : MonoBehaviour
     public float appearTime = 1f; // Time for tilemap to reappear
     private TilemapRenderer tilemapRenderer;
     private TilemapCollider2D tilemapCollider2D;
-    private bool isVisible = true;
+    private Animator blinkanimator;
+
     void Start()
     {
         tilemapRenderer = GetComponent<TilemapRenderer>();
         tilemapCollider2D = GetComponent<TilemapCollider2D>();
+        blinkanimator = GetComponent<Animator>();
         StartCoroutine(DisappearAndAppear());
     }
     IEnumerator DisappearAndAppear()
@@ -19,14 +21,14 @@ public class TilemapController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(appearTime);
-            tilemapRenderer.enabled = false;
+            // blinkanimator.enabled = true;
+            // tilemapRenderer.enabled = false;
             tilemapCollider2D.enabled = false;
-            isVisible = false;
 
             yield return new WaitForSeconds(disappearTime);
-            tilemapRenderer.enabled = true;
+            // blinkanimator.enabled = true;
+            // tilemapRenderer.enabled = true;
             tilemapCollider2D.enabled = true;
-            isVisible = true;
         }
     }
 }

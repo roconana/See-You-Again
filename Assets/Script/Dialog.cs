@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using TMPro;
 
 public class Dialog : MonoBehaviour
@@ -19,6 +20,7 @@ public class Dialog : MonoBehaviour
     public GameObject player;
     public string nextScene;
 
+    public bool _istyping;
 
     // The delay between each character in the typing effect.
     public float typingDelay = 0.05f;
@@ -42,16 +44,20 @@ public class Dialog : MonoBehaviour
             textName.text = info.name;
 
             // Clear the text dialog first.
-            textDialog.text = "";
-
-            // Iterate through each character in the dialogue text and add it to the TextMeshProUGUI component one by one.
-            for (int i = 0; i < info.talk.Length; i++)
+            _istyping = info.istyping;
+            if(!_istyping)
             {
-                // Add the current character to the TextMeshProUGUI component.
-                textDialog.text += info.talk[i];
+                textDialog.text = "";
 
-                // Wait for a short delay before adding the next character to create the typing effect.
-                yield return new WaitForSeconds(typingDelay);
+                // Iterate through each character in the dialogue text and add it to the TextMeshProUGUI component one by one.
+                for (int i = 0; i < info.talk.Length; i++)
+                {
+                    // Add the current character to the TextMeshProUGUI component.
+                    textDialog.text += info.talk[i];
+
+                    // Wait for a short delay before adding the next character to create the typing effect.
+                    yield return new WaitForSeconds(typingDelay);
+                }
             }
 
             info.onEndTalk.Invoke();
@@ -72,7 +78,6 @@ public class Dialog : MonoBehaviour
 
             yield return null;
         }
-        print("DOWN");
     }
 
     private IEnumerator StayByKeyUp()
@@ -83,8 +88,6 @@ public class Dialog : MonoBehaviour
 
             yield return null;
         }
-
-        print("UP");
     }
 
     public void MoveOn()
@@ -97,11 +100,13 @@ public class Dialog : MonoBehaviour
         player.GetComponent<PlayerController>().isDontMove = false;
     }
 
+  
     [System.Serializable]
     public class DialogInfo
     {
         public string name;
         public string talk;
+        public bool istyping = true;
         public UnityEvent onStartTalk;
         public UnityEvent onEndTalk;
     }

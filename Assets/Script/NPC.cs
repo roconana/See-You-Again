@@ -10,8 +10,6 @@ public class NPC : MonoBehaviour
 
     public void StartDialog()
     {
-        print("start DIalog");
-
         dialog.StartDialog();
     }
 
