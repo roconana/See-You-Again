@@ -11768,7 +11768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.87, y: 0, z: -10}
+  m_LocalPosition: {x: -32, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17456,7 +17456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "GAME OVER\nR\uD0A4\uB97C \uB20C\uB7EC \uC7AC\uC2DC\uC791"
+  m_text: "Try Again\nR\uD0A4\uB97C \uB20C\uB7EC \uB2E4\uC2DC \uD574\uBCF4\uC790!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9bcdebcff0f3dcd4b8212826743e3a17, type: 2}
   m_sharedMaterial: {fileID: 6269451570871429565, guid: 9bcdebcff0f3dcd4b8212826743e3a17, type: 2}
