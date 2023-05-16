@@ -22,6 +22,7 @@ public class CutSceneManager : MonoBehaviour
     public GameObject scene_2;
     public GameObject scene_3;
     public GameObject scene_4;
+    public GameObject DialogImage;
     public float typingDelay;
     private void StartTyping()
     {

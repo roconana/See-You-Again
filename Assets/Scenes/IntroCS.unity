@@ -434,6 +434,7 @@ MonoBehaviour:
   scene_2: {fileID: 851872524}
   scene_3: {fileID: 1866066209}
   scene_4: {fileID: 223008175}
+  DialogImage: {fileID: 0}
   typingDelay: 0.15
 --- !u!95 &851872527
 Animator:
@@ -524,11 +525,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1943150852}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 178}
+  m_AnchoredPosition: {x: 0, y: 254}
   m_SizeDelta: {x: 1920, y: 276.1301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020125323
@@ -689,6 +690,7 @@ MonoBehaviour:
   scene_2: {fileID: 851872524}
   scene_3: {fileID: 1866066209}
   scene_4: {fileID: 223008175}
+  DialogImage: {fileID: 0}
   typingDelay: 0.15
 --- !u!114 &1866066212
 MonoBehaviour:
@@ -727,6 +729,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866066209}
+  m_CullTransparentMesh: 1
+--- !u!1 &1909709698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1909709699}
+  - component: {fileID: 1909709701}
+  - component: {fileID: 1909709700}
+  m_Layer: 5
+  m_Name: DialogImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1909709699
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909709698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1943150852}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -286}
+  m_SizeDelta: {x: 1500, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1909709700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909709698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a81366b1d8df34845aac6f23ef5ed9d5, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1909709701
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909709698}
   m_CullTransparentMesh: 1
 --- !u!1 &1943150848
 GameObject:
@@ -824,6 +902,7 @@ RectTransform:
   - {fileID: 851872525}
   - {fileID: 1866066210}
   - {fileID: 223008176}
+  - {fileID: 1909709699}
   - {fileID: 1020125322}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -945,7 +1024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDialog: {fileID: 1020125323}
   talk: "\uC5EC\uAE30\uAC00 \uC5B4\uB514\uC9C0?"
-  talk2: "\uC0B0\uCC45 \uAC08 \uB54C\uAC00 \uB41C \uAC83 \uAC19\uC740\uB370..."
+  talk2: "\uD63C\uC790 \uC0B0\uCC45\uD558\uB294 \uAC74 \uC4F8\uC4F8\uD574...\n"
   talk3: "\uBB54\uAC00 \uC78A\uC740 \uAC83 \uAC19\uC544, \uD56D\uC0C1 \uB098\uB791
     \uAC19\uC774 \uC0B0\uCC45\uAC14\uB358...."
   talk4: ....!
@@ -953,4 +1032,5 @@ MonoBehaviour:
   scene_2: {fileID: 851872524}
   scene_3: {fileID: 1866066209}
   scene_4: {fileID: 223008175}
+  DialogImage: {fileID: 0}
   typingDelay: 0.11
