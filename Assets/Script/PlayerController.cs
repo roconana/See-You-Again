@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    public Vector2 teleportPosition;
+
+
     public bool isDontMove;
 
     private void Awake()
@@ -27,6 +30,12 @@ public class PlayerController : MonoBehaviour
         {
             UpdateMove();
             UpdateJump();
+        }
+        // Check if the T button is pressed
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            // Set the player's position to the desired coordinates
+            transform.position = teleportPosition;
         }
 
         UpdateTalk();

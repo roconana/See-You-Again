@@ -2328,6 +2328,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &357096337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357096339}
+  - component: {fileID: 357096338}
+  m_Layer: 0
+  m_Name: CloudManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &357096338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357096337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbffcc157d0ea747a074a09a2d1e47b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxClouldCount: 30
+  cloudPrefabs:
+  - {fileID: 8513203215365710245, guid: 77dfd18729df8e547833e077b4820b91, type: 3}
+  - {fileID: 3166514580077448760, guid: 33e4ba3c7e57cc74a914d608895d67de, type: 3}
+  - {fileID: 2120182795900336228, guid: 4251c6cb8759f504ebd31a4494bf7ea3, type: 3}
+  - {fileID: 630712461315658786, guid: 7ad6b7e8b976baf4296431035ef5a633, type: 3}
+--- !u!4 &357096339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357096337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.539127, y: -1.3174914, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &426393866
 GameObject:
   m_ObjectHideFlags: 0
@@ -13627,6 +13677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpKeyCode: 32
+  teleportPosition: {x: 114, y: -3}
   isDontMove: 0
 --- !u!114 &1604238500
 MonoBehaviour:

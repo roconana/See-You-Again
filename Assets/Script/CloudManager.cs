@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class CloudManager : MonoBehaviour
 {
-    public int maxClouldCount = 20;
+    public int maxCloudCount = 20;
     public GameObject[] cloudPrefabs;
+
     private void Start()
     {
-        StartCoroutine(SpwanCloud());
+        StartCoroutine(SpawnCloud());
         
     }
 
-    IEnumerator SpwanCloud()
+    IEnumerator SpawnCloud()
     {
-        for (int i = 0; i < maxClouldCount; i++)
+        for (int i = 0; i < maxCloudCount; i++)
         {
             yield return new WaitForSeconds(Random.Range(1f, 3f));
             GameObject clone = Instantiate(cloudPrefabs[Random.Range(0, cloudPrefabs.Length)], new Vector2(126, Random.Range(-6f, 4.5f)), Quaternion.identity);
