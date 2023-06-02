@@ -7381,7 +7381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbffcc157d0ea747a074a09a2d1e47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxClouldCount: 30
+  maxCloudCount: 20
   cloudPrefabs:
   - {fileID: 8513203215365710245, guid: 77dfd18729df8e547833e077b4820b91, type: 3}
   - {fileID: 3166514580077448760, guid: 33e4ba3c7e57cc74a914d608895d67de, type: 3}
@@ -7749,7 +7749,7 @@ PrefabInstance:
       objectReference: {fileID: 622090228}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: nextScene
-      value: Start
+      value: Stage2_1
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.size
@@ -8146,7 +8146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: onEndDialogsAndSwitchScene.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Start
+      value: Stage2_1
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: onEndEveryDialog.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
