@@ -12,6 +12,8 @@ public class EscapeScreenManager : MonoBehaviour
     public Button mainMenuButton;
     public Button quitButton;
 
+    public Slider volumeSlider;
+
     private bool isPaused = false;
 
     private void Start()
@@ -19,6 +21,12 @@ public class EscapeScreenManager : MonoBehaviour
         resumeButton.onClick.AddListener(ResumeGame);
         mainMenuButton.onClick.AddListener(GoToMainMenu);
         quitButton.onClick.AddListener(QuitGame);
+
+        // 슬라이더의 초기 값을 현재 음량에 맞춥니다.
+        volumeSlider.value = AudioListener.volume;
+
+        // 슬라이더 값이 변경될 때 호출될 함수를 설정합니다.
+        volumeSlider.onValueChanged.AddListener(OnVolumeSliderChanged);
 
         // Hide the escape screen initially
         escapeScreen.SetActive(false);
@@ -68,5 +76,11 @@ public class EscapeScreenManager : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    private void OnVolumeSliderChanged(float value)
+    {
+        // 슬라이더 값에 따라 음량을 조절합니다.
+        AudioListener.volume = value;
     }
 }

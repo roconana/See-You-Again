@@ -18492,6 +18492,7 @@ MonoBehaviour:
   resumeButton: {fileID: 1774828004}
   mainMenuButton: {fileID: 1746730000}
   quitButton: {fileID: 464080026}
+  volumeSlider: {fileID: 0}
 --- !u!1 &2047940145
 GameObject:
   m_ObjectHideFlags: 0

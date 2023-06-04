@@ -238,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.size
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[0].name
@@ -411,20 +411,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[20].name
-      value: "\uB610\uB9AC"
+      value: "\uC218\uC0C1\uD55C \uC544\uC800\uC528"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[20].talk
-      value: "\uBB49..."
+      value: "\uC57C, \uC624\uD788\uB824 \uB0B4\uAC00 \uBC84\uB824\uC918\uC11C \uB2C8\uAC00
+        \uADF8 \uC0C8\uC8FC\uC778\uC778\uC9C0 \uBB54\uC9C0\uB97C \uB9CC\uB09C \uAC74\uB370,
+        \uADF8\uB7FC \uB098\uD55C\uD14C \uACE0\uB9C8\uC6CC \uD574\uC57C \uD558\uB294
+        \uAC70 \uC544\uB0D0?"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[21].name
-      value: "\uD560\uBA38\uB2C8"
+      value: "\uC218\uC0C1\uD55C \uC544\uC800\uC528"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[21].talk
-      value: "\uC790\uAE30\uAC00 \uC9DD\uC0AC\uB791\uD558\uB294 \uC0AC\uB78C\uBCF4\uB2E4\uB3C4
-        \uB124\uAC00 \uC911\uC694\uD55C \uB140\uC11D\uC774\uC5C8\uAC70\uB4E0."
+      value: "\uC740\uD61C\uB97C \uBAA8\uB974\uB294\u2026 \uC774\uB798\uC11C \uD138\uB09C
+        \uC9D0\uC2B9\uC740 \uD0A4\uC6B0\uBA74 \uC548 \uB3FC\uC694, \uC798\uD574\uC918\uBD24\uC790
+        \uC544~\uBB34 \uC18C\uC6A9 \uC5C6\uB2E4."
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[22].name
@@ -432,61 +436,70 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[22].talk
-      value: "\uBA15?"
+      value: "... \uBB49."
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[23].name
-      value: "\uD560\uBA38\uB2C8"
+      value: "\uC218\uC0C1\uD55C \uC544\uC800\uC528"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[23].talk
-      value: "\uBCC0\uD558\uB294 \uAC8C \uC788\uC744 \uC9C0 \uBAB0\uB77C\uB3C4 \uC0AC\uB78C\uC758
-        \uB9C8\uC74C\uC740 \uC27D\uAC8C \uBCC0\uCE58 \uC54A\uC744 \uAC70\uB2E4. \uB124
-        \uC8FC\uC778\uCC98\uB7FC \uB9D0\uC774\uC9C0."
+      value: "\uB0B4\uAC00 \uBB50\uB77C\uD558\uB4E0 \uC0C1\uAD00 \uC548 \uC4F4\uB2E4\uACE0?
+        \uB108 \uC88B\uB2E4\uB294 \uC0AC\uB78C\uB3C4 \uADF8 \uC0C8 \uC8FC\uC778\uC778\uC9C0
+        \uBB54\uC9C0 \uD558\uB294 \uD55C \uBA85 \uBFD0\uC774\uBA74\uC11C, \uAD1C\uCC2E\uC740
+        \uCC99\uC740."
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[24].name
-      value: "\uD560\uBA38\uB2C8"
+      value: "\uC218\uC0C1\uD55C \uC544\uC800\uC528"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[24].talk
-      value: "\uB124\uAC00 \uBA48\uCD94\uC9C0 \uC54A\uACE0 \uC790\uAE38 \uCC3E\uC544\uC92C\uC73C\uBA74
-        \uD558\uB294 \uB9C8\uC74C\uC77C \uAC8C\uC57C, \uADF8 \uB140\uC11D\uC740 \uBD84\uBA85."
+      value: "\uB108\uB3C4 \uB108 \uC88B\uB2E4\uB294 \uC0AC\uB78C \uC5C6\uC5B4\uC11C
+        \uC544\uC26C\uC6CC\uC11C \uC5EC\uAE30\uC800\uAE30 \uB204\uBE44\uACE0 \uB2E4\uB2C8\uB294
+        \uAC70\uC796\uC544, \uC548 \uADF8\uB798?"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[25].name
-      value: "\uB610\uB9AC"
+      value: "\uC218\uC0C1\uD55C \uC544\uC800\uC528"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[25].talk
-      value: "\uBA4D!!"
+      value: "\uB108\uB098 \uB098\uB098 \uBBF8\uC6C0\uBC1B\uACE0~ \uBC84\uB824\uC9C0\uB294
+        \uAC74 \uB611\uAC19\uB2E4, \uC774 \uC790\uC2DD\uC544."
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[26].name
-      value: "\uD560\uBA38\uB2C8"
+      value: "\uB610\uB9AC"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[26].talk
-      value: "\uADF8\uB7EC\uB2C8 \uB108\uB3C4 \uBA48\uCD94\uC9C0 \uB9D0\uACE0 \uD798\uB0B4\uB780
-        \uB73B\uC774\uB2E4. \uC138\uC0C1\uC5D4 \uB110 \uBBF8\uC6CC\uD558\uB294 \uC0AC\uB78C\uBCF4\uB2E4
-        \uB110 \uAE30\uC5B5\uD558\uACE0 \uC0AC\uB791\uD558 \uB294 \uC0AC\uB78C\uC774
-        \uB354\uB354\uC6B1 \uB9CE\uB2E4\uB294 \uAC78 \uC78A\uC9C0 \uB9D0\uAC70\uB77C."
+      value: "\uB9DD~!"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[27].name
-      value: "\uD560\uBA38\uB2C8"
+      value: "\uC218\uC0C1\uD55C \uC544\uC800\uC528"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[27].talk
-      value: "\uADF8\uB7FC \uB610 \uB9CC\uB098\uC790\uAFB8\uB098."
+      value: "\uB098\uB3C4 \uD589\uBCF5\uD574\uC9C8 \uC218 \uC788\uC744 \uAC70\uB77C\uB2C8,
+        \uC9D0\uC2B9 \uC8FC\uC81C\uC5D0 \uB108 \uC9C0\uAE08 \uB098 \uB3D9\uC815\uD558\uB0D0?"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[28].name
-      value: "\uCEF7\uC52C"
+      value: "\uB610\uB9AC"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[28].talk
-      value: "\u3147\u3147\u3147"
+      value: "\uBB49!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
+      propertyPath: dialogInfos.Array.data[29].name
+      value: "\uC218\uC0C1\uD55C \uC544\uC800\uC528"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
+      propertyPath: dialogInfos.Array.data[29].talk
+      value: "\uB610 \uBCF4\uAE30\uB294, \uB2E4\uC2E0 \uBCF4\uAE30 \uC2EB\uB2E4!"
       objectReference: {fileID: 0}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[32].name
@@ -972,71 +985,83 @@ PrefabInstance:
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[20].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: ce591c3139bd2f74d84c4a7a88a05c45, type: 3}
+      objectReference: {fileID: 21300000, guid: 6f30338568230ee4f8df4abaec938af9, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[20].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: c5fc1333b7989614a834b17ed3c9ba09, type: 3}
+      objectReference: {fileID: 21300000, guid: aeae89a092ca77440b61d5cf7ca738f8, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[21].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: d3d329aa1b33a72469dddc68704bf022, type: 3}
+      objectReference: {fileID: 21300000, guid: e215404cb66939446810ad72ab79d808, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[21].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 9d846392bb6b57847a9b120f246d5f2b, type: 3}
+      objectReference: {fileID: 21300000, guid: aeae89a092ca77440b61d5cf7ca738f8, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[22].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: ce591c3139bd2f74d84c4a7a88a05c45, type: 3}
+      objectReference: {fileID: 21300000, guid: ced33df2025438240a3d4dc6767094fb, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[22].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 584073093adced84aafcc673cf22e108, type: 3}
+      objectReference: {fileID: 21300000, guid: c5fc1333b7989614a834b17ed3c9ba09, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[23].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: d3d329aa1b33a72469dddc68704bf022, type: 3}
+      objectReference: {fileID: 21300000, guid: 6f30338568230ee4f8df4abaec938af9, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[23].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 9a79e77fe912f674694fa63581d67c58, type: 3}
+      objectReference: {fileID: 21300000, guid: 9d846392bb6b57847a9b120f246d5f2b, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[24].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: d3d329aa1b33a72469dddc68704bf022, type: 3}
+      objectReference: {fileID: 21300000, guid: 6f30338568230ee4f8df4abaec938af9, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[24].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 9a79e77fe912f674694fa63581d67c58, type: 3}
+      objectReference: {fileID: 21300000, guid: 9d846392bb6b57847a9b120f246d5f2b, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[25].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: ce591c3139bd2f74d84c4a7a88a05c45, type: 3}
+      objectReference: {fileID: 21300000, guid: e215404cb66939446810ad72ab79d808, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[25].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 0fb796ecfb5c71c40b326923ff8116e9, type: 3}
+      objectReference: {fileID: 21300000, guid: 9d846392bb6b57847a9b120f246d5f2b, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[26].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: a14842960625f9e4d8a206a4bfe7b0ef, type: 3}
+      objectReference: {fileID: 21300000, guid: ced33df2025438240a3d4dc6767094fb, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[26].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 2b51eabc50b94f145a766ba61f773ade, type: 3}
+      objectReference: {fileID: 21300000, guid: def2fdfa1b810cd40be270395f854f8c, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[27].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: a14842960625f9e4d8a206a4bfe7b0ef, type: 3}
+      objectReference: {fileID: 21300000, guid: 753176146d94da2438920eb1dca68989, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[27].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: 2b51eabc50b94f145a766ba61f773ade, type: 3}
+      objectReference: {fileID: 21300000, guid: 049e7344df500004386524a1b5f2c72b, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[28].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 21300000, guid: a2382ee566e404b4da773e74a0342f7b, type: 3}
+      objectReference: {fileID: 21300000, guid: 399356c8e8733b245926c70ccf783bc4, type: 3}
+    - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
+      propertyPath: dialogInfos.Array.data[28].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 21300000, guid: c5fc1333b7989614a834b17ed3c9ba09, type: 3}
+    - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
+      propertyPath: dialogInfos.Array.data[29].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 21300000, guid: e215404cb66939446810ad72ab79d808, type: 3}
+    - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
+      propertyPath: dialogInfos.Array.data[29].onStartTalk.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d846392bb6b57847a9b120f246d5f2b, type: 3}
     - target: {fileID: 4663471577087389984, guid: 1a63df9bae57ec348aefc0ceaddd7b70, type: 3}
       propertyPath: dialogInfos.Array.data[33].onStartTalk.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 

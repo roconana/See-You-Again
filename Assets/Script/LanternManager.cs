@@ -16,10 +16,10 @@ public class LanternManager : MonoBehaviour
     {
         for (int i = 0; i < maxLanternCount; i++)
         {
-            yield return new WaitForSeconds(Random.Range(0.1f, 1.0f));
+            yield return new WaitForSeconds(Random.Range(0.1f, 0.5f));
             GameObject clone = Instantiate(lanternPrefabs[Random.Range(0, lanternPrefabs.Length)], new Vector2(Random.Range(-42f, 160f), -10f), Quaternion.identity);
             clone.name = "Clone_" + i;
-            clone.GetComponent<Lantern>().speed = Random.Range(1f, 2.8f);
+            clone.GetComponent<Lantern>().speed = Random.Range(1f, 2.5f);
         }
     }
 
