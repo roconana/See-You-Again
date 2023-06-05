@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 70bcfa75951328348862f750d6fd3615
+guid: 9a52e7ce698e753498657d2bbe5cdc7b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackGround_S2_4_3_0
+      name: Start_Cloud 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 184
-        height: 224
+        y: 975.5
+        width: 1763.3334
+        height: 975.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bbc37a2402cf96468f00d7991b10279
-      internalID: 2117209846
+      spriteID: f0dc127c2cebf1f49a70b66430858fed
+      internalID: 846957399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackGround_S2_4_3_1
+      name: Start_Cloud 1_1
       rect:
         serializedVersion: 2
-        x: 184
-        y: 0
-        width: 184
-        height: 224
+        x: 1763
+        y: 975.5
+        width: 1763.3334
+        height: 975.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c556c17836fe343976c882a8959388
-      internalID: -145338
+      spriteID: d986e6bada3de9d438f59293a7607eca
+      internalID: 579336033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackGround_S2_4_3_2
+      name: Start_Cloud 1_2
       rect:
         serializedVersion: 2
-        x: 368
-        y: 0
-        width: 184
-        height: 224
+        x: 3526
+        y: 975.5
+        width: 1763.3334
+        height: 975.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24b9ac15ee40a96418a70cb3234866d2
-      internalID: 343212499
+      spriteID: 4496fbca33577f3478a43045e8e06eba
+      internalID: -2057309598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BackGround_S2_4_3_3
+      name: Start_Cloud 1_3
       rect:
         serializedVersion: 2
-        x: 552
-        y: 0
-        width: 184
-        height: 224
+        x: 0
+        y: 0.5
+        width: 1763.3334
+        height: 975.5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +182,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26ce543095979dc489ab64d027bca3e4
-      internalID: -1274778591
+      spriteID: 7658028f9e9f1dc449c4faa4637d4875
+      internalID: 1350195600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Start_Cloud 1_4
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 0.5
+        width: 1763.3334
+        height: 975.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bf75e028e08ef4daa84baee505de8d
+      internalID: 1786414007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Start_Cloud 1_5
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 0.5
+        width: 1763.3334
+        height: 975.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72179950bc9009478946c87f64a5276
+      internalID: 135886661
       vertices: []
       indices: 
       edges: []
@@ -199,10 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BackGround_S2_4_3_3: -1274778591
-      BackGround_S2_4_3_0: 2117209846
-      BackGround_S2_4_3_1: -145338
-      BackGround_S2_4_3_2: 343212499
+      Start_Cloud 1_5: 135886661
+      Start_Cloud 1_1: 579336033
+      Start_Cloud 1_3: 1350195600
+      Start_Cloud 1_4: 1786414007
+      Start_Cloud 1_0: 846957399
+      Start_Cloud 1_2: -2057309598
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

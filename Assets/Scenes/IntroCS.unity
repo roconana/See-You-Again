@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 851872527}
   - component: {fileID: 851872526}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: CS_OP_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
   scene_2: {fileID: 851872524}
   scene_3: {fileID: 1866066209}
   scene_4: {fileID: 223008175}
-  DialogImage: {fileID: 0}
+  dialogImage: {fileID: 0}
   typingDelay: 0.15
 --- !u!95 &851872527
 Animator:
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 1020125324}
   - component: {fileID: 1020125323}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: DialogText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -642,7 +642,7 @@ GameObject:
   - component: {fileID: 1866066212}
   - component: {fileID: 1866066211}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: CS_OP_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
   scene_2: {fileID: 851872524}
   scene_3: {fileID: 1866066209}
   scene_4: {fileID: 223008175}
-  DialogImage: {fileID: 0}
+  dialogImage: {fileID: 0}
   typingDelay: 0.15
 --- !u!114 &1866066212
 MonoBehaviour:
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 1909709701}
   - component: {fileID: 1909709700}
   m_Layer: 5
-  m_Name: DialogImage
+  m_Name: dialogImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 2113172415}
   - component: {fileID: 2113172418}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CS_OP_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1025,12 +1025,12 @@ MonoBehaviour:
   textDialog: {fileID: 1020125323}
   talk: "\uC5EC\uAE30\uAC00 \uC5B4\uB514\uC9C0?"
   talk2: "\uD63C\uC790 \uC0B0\uCC45\uD558\uB294 \uAC74 \uC4F8\uC4F8\uD574...\n"
-  talk3: "\uBB54\uAC00 \uC78A\uC740 \uAC83 \uAC19\uC544, \uD56D\uC0C1 \uB098\uB791
-    \uAC19\uC774 \uC0B0\uCC45\uAC14\uB358...."
+  talk3: "\uBB54\uAC00 \uC78A\uC740 \uAC83 \uAC19\uC544, \uD56D\uC0C1 \uB098\uC640
+    \uD568\uAED8 \uC0B0\uCC45\uAC14\uB358...."
   talk4: ....!
   talk5: "\uC8FC\uC778\uC744 \uCC3E\uACE0 \uC2F6\uC5B4!"
   scene_2: {fileID: 851872524}
   scene_3: {fileID: 1866066209}
   scene_4: {fileID: 223008175}
-  DialogImage: {fileID: 0}
+  dialogImage: {fileID: 1909709698}
   typingDelay: 0.11

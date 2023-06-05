@@ -22,7 +22,7 @@ public class CutSceneManager : MonoBehaviour
     public GameObject scene_2;
     public GameObject scene_3;
     public GameObject scene_4;
-    public GameObject DialogImage;
+    public GameObject dialogImage;
     public float typingDelay;
     private void StartTyping()
     {
@@ -32,6 +32,8 @@ public class CutSceneManager : MonoBehaviour
     private IEnumerator Typing()
     {
         textDialog.text = "";
+
+        dialogImage.SetActive(true);
 
         for (int i = 0; i < talk.Length; i++)
         {
@@ -107,9 +109,11 @@ public class CutSceneManager : MonoBehaviour
 
             yield return new WaitForSeconds(typingDelay);
         }
+
         yield return new WaitForSeconds(1f);
         textDialog.text = "";
         scene_4.SetActive(true);
+        GameObject.Find("dialogImage").SetActive(false);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Stage1_1");
     }

@@ -22199,9 +22199,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1499411294}
     m_Modifications:
+    - target: {fileID: 6233875170017335506, guid: 17ed1b7322b1bb24ea0121eb02896981, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233875170040716295, guid: 17ed1b7322b1bb24ea0121eb02896981, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6233875170322990990, guid: 17ed1b7322b1bb24ea0121eb02896981, type: 3}
       propertyPath: m_Name
       value: ESC
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233875170322990990, guid: 17ed1b7322b1bb24ea0121eb02896981, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6233875170322990991, guid: 17ed1b7322b1bb24ea0121eb02896981, type: 3}
       propertyPath: m_Pivot.x
