@@ -30,7 +30,7 @@ public class ContinueManager : MonoBehaviour
         button5.onClick.AddListener(LoadScene5);
         button6.onClick.AddListener(LoadScene6);
         button7.onClick.AddListener(LoadScene7);
-        button9.onClick.AddListener(LoadScene8);
+        button8.onClick.AddListener(LoadScene8);
         button9.onClick.AddListener(LoadScene9);
         button10.onClick.AddListener(LoadScene10);
     }
