@@ -179,6 +179,10 @@ public class Movement2D : MonoBehaviour
         colliderCorner.topLeft = new Vector2(bounds.min.x, bounds.max.y);
     }
 
+    public void ResetVelocity()
+    {
+        velocity = Vector2.zero;
+    }
      private void CalculateRaySpacing()
      {
             Bounds bounds = capsuleCollider2D.bounds;

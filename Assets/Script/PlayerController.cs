@@ -93,6 +93,8 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Z))
         {
+            animator.SetFloat("movement", 0);
+            movement2D.ResetVelocity();
             currentNPC?.StartDialog();
         }
     }

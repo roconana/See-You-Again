@@ -7,6 +7,12 @@ public class GameOver : MonoBehaviour
     public GameObject gameOverPopup;
     public Vector3 resetPosition;
 
+    private PlayerController playerCtrl;
+
+    private void Start()
+    {
+        playerCtrl = GetComponent<PlayerController>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Gameover")
@@ -18,7 +24,7 @@ public class GameOver : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && playerCtrl.isDontMove)
         {
             RestartGame();
         }

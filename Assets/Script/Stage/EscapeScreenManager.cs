@@ -65,6 +65,7 @@ public class EscapeScreenManager : MonoBehaviour
 
     private void GoToMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Start");
     }
 
